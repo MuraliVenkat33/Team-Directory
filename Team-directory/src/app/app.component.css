@@ -1,0 +1,33 @@
+.bg-navbar{
+    background-color: #84a3f6;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+    border-radius: 2rem;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    line-height: 2.6rem;
+    text-align: center;
+    pointer-events: none;
+    color: #000000;
+    font-size: 18px;
+}
+
+input::placeholder {
+    color: #b4b4b4;
+    font-size: 13px;
+  }
+
+.font-weight-500{
+    font-weight: 500;
+}

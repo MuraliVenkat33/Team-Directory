@@ -1,0 +1,53 @@
+<div class="bg-user-list px-md-4 px-sm-2 px-2">
+  <h5 class="pt-4 px-md-3 px-sm-3 px-3 team-role">Administrators</h5>
+
+  <div class="row m-0 py-4">
+    @for (user of users | splitUsersByRolePipe: { key1: 'admin', key2: searchQuery }; track user.email ){
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="card mb-3 card-container">
+        <div class="row g-0 align-items-center px-3">
+          <div class="col-md-2 col-sm-2 col-2 profile-img">
+            <img src="{{user.img}}" class="img-fluid profile-img" alt="{{user.first_name}}">
+          </div>
+          <div class="col-md-9 col-sm-9 col-9">
+            <div class="card-body py-3">
+              <h5 class="card-title mb-0">{{user.first_name}} {{user.last_name}}</h5>
+              <p class="card-text">{{user.email}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    } @empty{
+    <span>No Users Available</span>
+    }
+
+  </div>
+
+
+  <h5 class="pt-4 px-3 team-role">Members</h5>
+
+  <div class="row m-0 py-4">
+    @for (user of users | splitUsersByRolePipe:{ key1: 'member', key2: searchQuery }; track user.email ){
+    <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="card mb-3 card-container">
+        <div class="row g-0 align-items-center px-3">
+          <div class="col-md-2 col-sm-2 col-2 profile-img">
+            <img src="{{user.img}}" class="img-fluid profile-img" alt="{{user.first_name}}">
+          </div>
+          <div class="col-md-9 col-sm-9 col-9">
+            <div class="card-body py-3">
+              <h5 class="card-title mb-0">{{user.first_name}} {{user.last_name}}</h5>
+              <p class="card-text">{{user.email}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    } @empty{
+    <span>No Users Available</span>
+    }
+
+  </div>
+
+</div>
