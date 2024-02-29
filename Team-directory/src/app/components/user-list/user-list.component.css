@@ -30,16 +30,13 @@
     box-shadow: 3px 3px 4px 0px rgb(0 0 0 / 5%);
     border: none;
     border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .border-bottom {
     border-bottom: 2px solid #e7e7e7;
-}
-
-
-.card-container {
-    transition: box-shadow 0.3s ease-in-out;
-    transition: transform 0.3s ease-in-out;
 }
 
 .card-container:hover {
