@@ -1,39 +1,50 @@
-.bg-user-list{
+.bg-user-list {
     background-color: #f9f9fb;
 }
 
-.card-title{
+.card-title {
     font-size: 16px;
 }
 
 
-.card-text{
+.card-text {
     font-size: 11px;
     color: #b4b4b4;
     overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
-.profile-img{
+.profile-img {
     width: 47px;
     height: 47px;
     border-radius: 50%;
 }
 
-.team-role{
+.team-role {
     color: #898da4;
     font-size: 1.35rem;
 }
 
-.card-container{
+.card-container {
     box-shadow: 3px 3px 4px 0px rgb(0 0 0 / 5%);
     border: none;
     border-radius: 8px;
 }
 
-.border-bottom{
+.border-bottom {
     border-bottom: 2px solid #e7e7e7;
+}
+
+
+.card-container {
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-container:hover {
+    box-shadow: 10px 9px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(1.03);
 }
 
 @media (min-width: 993px) and (max-width: 1100px) {
@@ -41,4 +52,4 @@
         flex: 0 0 auto;
         width: 33.33333333%;
     }
-  }
+}
